@@ -225,7 +225,10 @@ color:white;
     background:Orange;
 }
 
-
+.bigcontainer{
+    display:flex;
+    align-items:center;
+    justify-content:center;}
           
         </style>
         <div class="header">
@@ -261,14 +264,14 @@ color:white;
         
         <form action=" https://formsubmit.co/hardiktomar215@gmail.com" method="POST">
   <div class="container">
-      
+      <div class="bigcontainer">
     <div class="Namebox">
          
-         <input type="text" placeholder="First Name" class="names">
-      <input type="text" placeholder="Last Name" class="names">
+         <input type="text" name="First Name" placeholder="First Name" class="names">
+      <input type="text" name="Last name" placeholder="Last Name" class="names">
      </div>
-      <input type="text" placeholder="Address" class="Data2">
-      <input type="tel" inputmode="numeric" placeholder="Mobile No." class="Data2">
+      <input type="text" name="Address" placeholder="Address" class="Data2">
+      <input type="tel" inputmode="numeric" name="Mobile Number" placeholder="Mobile No." class="Data2">
      <div class="date"><p>D:O:B</p><input type="date" class="Calendar"></div>
       
       <div class="Selection">
@@ -287,7 +290,7 @@ color:white;
       <button class="submit" type="submit">SUBMIT</button>
       
   </div>  
-  
+        </div>
   </form>
   <div class="footer">
     <div class="Address">ADDRESS </div>
