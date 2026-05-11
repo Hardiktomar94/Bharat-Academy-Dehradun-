@@ -1,0 +1,538 @@
+<html> 
+    <head>
+        
+    </head>
+    <body>
+        
+        <style>
+            body{
+           
+  
+    }
+  
+.header{
+border:1px solid;
+padding:5px;
+font-size:20px;
+font-family: Oswald;
+display:flex;
+flex-direction:row;
+align-items: center;
+background: #c8cacf;
+background: linear-gradient(69deg, rgba(200, 202, 207, 1) 13%, rgba(200, 202, 207, 1) 21%, rgba(200, 202, 207, 1) 27%, rgba(148, 150, 156, 1) 57%, rgba(135, 137, 143, 1) 87%, rgba(120, 122, 128, 1) 99%, rgba(132, 134, 140, 1) 100%, rgba(148, 150, 156, 1) 100%);
+
+}
+.header p{position: absolute;
+    font-size:15px;
+    font-family: Oswald;
+    right:45px;
+}
+.header img{position: absolute;
+width:20px;
+height:20px;
+right:20px;
+    
+}
+
+
+ .menu{display:flex;
+ flex-direction:column;
+       position: fixed;
+           border:1px solid;
+           width: 135px;
+           height:clamp(250px,70vh,450px );
+           font-family: Oswald;
+           scrolling:smooth;
+           color:white;
+           left:-180px;
+           transition:0.45321s;
+           background: #168bb5;
+background: linear-gradient(336deg, rgba(22, 139, 181, 1) 0%, rgba(1, 197, 245, 1) 0%, rgba(9, 159, 203, 1) 0%, rgba(19, 105, 144, 1) 0%, rgba(22, 90, 127, 1) 0%, rgba(27, 64, 99, 1) 0%, rgba(27, 64, 99, 1) 4%, rgba(27, 64, 99, 1) 61%, rgba(27, 64, 99, 1) 42%, rgba(27, 64, 99, 1) 51%);
+           
+       }
+       .menu{
+           overflow-y: auto;
+           height:70vh;
+       }
+       .menu a:first-child{
+           margin-top:30px;
+       }
+       .menu a {
+           cursor:pointer;
+           display:block;
+           padding:10px;
+           font-size:15px;
+           color:white;
+       }
+       
+       .menu a:hover{
+           background:#3333;
+       }
+       
+       .menu a:visited{
+           text-decoration:none;
+           color:white;
+       }
+       
+       .menu a:hover{
+           text-decoration:none;
+           color:white;
+       }
+       .menu a {
+           text-decoration:none;
+           color:white;
+       }
+       
+       #menu-toggle{
+           display:none;
+       }
+       #menu-toggle:checked ~.menu{
+           left:0%;
+       }
+       .menu a:last-of-type{
+           margin-top:auto;
+       }
+       
+.menu-icon {
+    left:-20px;
+    padding:5px;
+    cursor:pointer;
+    
+}
+
+.close-btn{
+    
+    cursor:pointer;
+    font-size:30px; 
+    padding:20px;
+    margin-left:5px;
+    position:absolute;
+    right:-15px;
+    top:-30px;
+}
+
+.headline1{
+    border:1px solid black;
+margin-top:10px;
+    background: #C59B09;
+background: linear-gradient(315deg, #C59B09, #F98349);   
+color:white;
+text-align:center;
+font-family:Oswald;
+
+}
+.pictures{
+    width:100px;
+    float:left;
+    border:1px solid black;
+    margin-top:5px;
+    border-radius:10px;
+    margin-left:5px;
+    margin-right:5px;
+    
+    
+}
+.CGL{
+    margin-top:20px;
+    border:2px solid black;
+    
+    
+}
+.CGL h2{
+    text-align:center;
+    font-family: Oswald;
+    margin-top:-2px;
+    text-decoration:underline;
+}
+.CGL p{
+    font-family:smooch Sans;
+    margin-top:-15px;
+    margin-left:5px;
+   
+}
+.CGL p{ margin-top:15px;
+font-family: smooch Sans;
+
+}
+.CGL button{
+    Color:white;
+    border-radius:5px;
+    margin-top:10px;
+    background: #168bb5;
+background: linear-gradient(336deg, rgba(22, 139, 181, 1) 0%, rgba(1, 197, 245, 1) 0%, rgba(9, 159, 203, 1) 0%, rgba(19, 105, 144, 1) 0%, rgba(22, 90, 127, 1) 0%, rgba(27, 64, 99, 1) 0%, rgba(27, 64, 99, 1) 4%, rgba(27, 64, 99, 1) 61%, rgba(27, 64, 99, 1) 42%, rgba(27, 64, 99, 1) 51%);
+
+font-family:Oswald;
+height:30px;
+}
+
+.NDA{
+    margin-top:20px;
+    border:2px solid black;}
+    
+    .NDA h2{
+    text-align:center;
+    font-family: Oswald;
+    margin-top:-2px;
+    text-decoration:underline;
+}
+.NDA p{
+    font-family:smooch Sans;
+    margin-top:-15px;
+    margin-left:5px;
+   
+}
+.NDA p{ margin-top:15px;
+font-family: smooch Sans;
+
+}
+.NDA button{
+    Color:white;
+    border-radius:5px;
+    margin-top:10px;
+    background: #168bb5;
+background: linear-gradient(336deg, rgba(22, 139, 181, 1) 0%, rgba(1, 197, 245, 1) 0%, rgba(9, 159, 203, 1) 0%, rgba(19, 105, 144, 1) 0%, rgba(22, 90, 127, 1) 0%, rgba(27, 64, 99, 1) 0%, rgba(27, 64, 99, 1) 4%, rgba(27, 64, 99, 1) 61%, rgba(27, 64, 99, 1) 42%, rgba(27, 64, 99, 1) 51%);
+margin-bottom:15px;
+margin-left:5px;
+font-family:Oswald;
+height:30px;
+}
+
+.AFCAT{
+    margin-top:20px;
+    border:2px solid black;}
+    
+.AFCAT h2{
+    text-align:center;
+    font-family: Oswald;
+    margin-top:-2px;
+    text-decoration:underline;
+}
+.AFCAT p{
+    font-family:smooch Sans;
+    margin-top:-15px;
+    margin-left:5px;
+   
+}
+.AFCAT p{ margin-top:15px;
+font-family: smooch Sans;
+
+}
+.AFCAT button{
+    Color:white;
+    border-radius:5px;
+    margin-top:10px;
+    background: #168bb5;
+background: linear-gradient(336deg, rgba(22, 139, 181, 1) 0%, rgba(1, 197, 245, 1) 0%, rgba(9, 159, 203, 1) 0%, rgba(19, 105, 144, 1) 0%, rgba(22, 90, 127, 1) 0%, rgba(27, 64, 99, 1) 0%, rgba(27, 64, 99, 1) 4%, rgba(27, 64, 99, 1) 61%, rgba(27, 64, 99, 1) 42%, rgba(27, 64, 99, 1) 51%);
+margin-bottom:15px;
+margin-left:5px;
+font-family:Oswald;
+height:30px;
+}
+
+
+.CDS{
+    margin-top:20px;
+    border:2px solid black;}
+   
+   
+.CDS h2{
+    text-align:center;
+    font-family: Oswald;
+    margin-top:-2px;
+    text-decoration:underline;
+}
+.CDS p{
+    font-family:smooch Sans;
+    margin-top:-15px;
+    margin-left:5px;
+   
+}
+.CDS p{ margin-top:15px;
+font-family: smooch Sans;
+
+}
+.CDS button{
+    Color:white;
+    border-radius:5px;
+    margin-top:10px;
+    background: #168bb5;
+background: linear-gradient(336deg, rgba(22, 139, 181, 1) 0%, rgba(1, 197, 245, 1) 0%, rgba(9, 159, 203, 1) 0%, rgba(19, 105, 144, 1) 0%, rgba(22, 90, 127, 1) 0%, rgba(27, 64, 99, 1) 0%, rgba(27, 64, 99, 1) 4%, rgba(27, 64, 99, 1) 61%, rgba(27, 64, 99, 1) 42%, rgba(27, 64, 99, 1) 51%);
+margin-bottom:15px;
+margin-left:5px;
+font-family:Oswald;
+height:30px;
+}
+.ICG{
+    margin-top:20px;
+    border:2px solid black;}
+   
+   
+.ICG h2{
+    text-align:center;
+    font-family: Oswald;
+    margin-top:-2px;
+    text-decoration:underline;
+}
+.ICG p{
+    font-family:smooch Sans;
+    margin-top:-15px;
+    margin-left:5px;
+   
+}
+.ICG p{ margin-top:15px;
+font-family: smooch Sans;
+
+}
+.ICG button{
+    Color:white;
+    border-radius:5px;
+    margin-top:10px;
+    background: #168bb5;
+background: linear-gradient(336deg, rgba(22, 139, 181, 1) 0%, rgba(1, 197, 245, 1) 0%, rgba(9, 159, 203, 1) 0%, rgba(19, 105, 144, 1) 0%, rgba(22, 90, 127, 1) 0%, rgba(27, 64, 99, 1) 0%, rgba(27, 64, 99, 1) 4%, rgba(27, 64, 99, 1) 61%, rgba(27, 64, 99, 1) 42%, rgba(27, 64, 99, 1) 51%);
+margin-bottom:15px;
+margin-left:5px;
+font-family:Oswald;
+height:30px;
+}
+
+.RMS{
+    margin-top:20px;
+    border:2px solid black;}
+   
+   
+.RMS h2{
+    text-align:center;
+    font-family: Oswald;
+    margin-top:-2px;
+    text-decoration:underline;
+}
+.RMS p{
+    font-family:smooch Sans;
+    margin-top:-15px;
+    margin-left:5px;
+   
+}
+.RMS p{ margin-top:15px;
+font-family: smooch Sans;
+
+}
+.RMS button{
+    Color:white;
+    border-radius:5px;
+    margin-top:10px;
+    background: #168bb5;
+background: linear-gradient(336deg, rgba(22, 139, 181, 1) 0%, rgba(1, 197, 245, 1) 0%, rgba(9, 159, 203, 1) 0%, rgba(19, 105, 144, 1) 0%, rgba(22, 90, 127, 1) 0%, rgba(27, 64, 99, 1) 0%, rgba(27, 64, 99, 1) 4%, rgba(27, 64, 99, 1) 61%, rgba(27, 64, 99, 1) 42%, rgba(27, 64, 99, 1) 51%);
+margin-bottom:15px;
+margin-left:5px;
+font-family:Oswald;
+height:30px;
+}
+
+.RIMC{
+    margin-top:20px;
+    border:2px solid black;}
+   
+   
+.RIMC h2{
+    text-align:center;
+    font-family: Oswald;
+    margin-top:-2px;
+    text-decoration:underline;
+}
+.RIMC p{
+    font-family:smooch Sans;
+    margin-top:-15px;
+    margin-left:5px;
+   
+}
+.RIMC p{ margin-top:15px;
+font-family: smooch Sans;
+
+}
+.RIMC button{
+    Color:white;
+    border-radius:5px;
+    margin-top:10px;
+    background: #168bb5;
+background: linear-gradient(336deg, rgba(22, 139, 181, 1) 0%, rgba(1, 197, 245, 1) 0%, rgba(9, 159, 203, 1) 0%, rgba(19, 105, 144, 1) 0%, rgba(22, 90, 127, 1) 0%, rgba(27, 64, 99, 1) 0%, rgba(27, 64, 99, 1) 4%, rgba(27, 64, 99, 1) 61%, rgba(27, 64, 99, 1) 42%, rgba(27, 64, 99, 1) 51%);
+margin-bottom:15px;
+margin-left:5px;
+font-family:Oswald;
+height:30px;
+}
+
+.same{
+    margin-top:20px;
+    border:2px solid black;}
+   
+   
+.same h2{
+    text-align:center;
+    font-family: Oswald;
+    margin-top:-2px;
+    text-decoration:underline;
+}
+.same p{
+    font-family:smooch Sans;
+    margin-top:-15px;
+    margin-left:5px;
+   
+}
+.same p{ margin-top:15px;
+font-family: smooch Sans;
+
+}
+.same button{
+    Color:white;
+    border-radius:5px;
+    margin-top:10px;
+    background: #168bb5;
+background: linear-gradient(336deg, rgba(22, 139, 181, 1) 0%, rgba(1, 197, 245, 1) 0%, rgba(9, 159, 203, 1) 0%, rgba(19, 105, 144, 1) 0%, rgba(22, 90, 127, 1) 0%, rgba(27, 64, 99, 1) 0%, rgba(27, 64, 99, 1) 4%, rgba(27, 64, 99, 1) 61%, rgba(27, 64, 99, 1) 42%, rgba(27, 64, 99, 1) 51%);
+margin-bottom:15px;
+margin-left:5px;
+font-family:Oswald;
+height:30px;
+}
+        </style>
+        
+        
+        <div class="header">
+           <label for="menu-toggle" class="menu-icon">☰</label>
+           <p>BHARAT ACADEMY DEHRADUN </p>
+           <img src="file:///storage/emulated/0/Pictures/Remove.bg/ei_1776396372898-removebg-preview.png">
+           
+           </div>
+           <input type="checkbox" id="menu-toggle">
+           
+              
+           <div class="menu">
+               <label for="menu-toggle" class="close-btn">
+                  ← 
+               </label>
+               <a href="">HOME</a>
+               <a href="">REGISTERATION</a>
+               <a href="">COURSES</a>
+               <a href="">FEE STRUCTURE</a>
+               <a href="https://wa.me/917078368368?text=Hey%20I%20am%20here%20for%20enquiry">ENQUIRY</a>
+               <a href="tel:+917078368368">CONTACT US</a>
+               <a href="">ABOUT US</a>
+               
+           </div>
+</div>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+        <div class="headline1">COURSES</div>
+        <section id="CGL">
+            <div class="CGL">
+                <img src="file:///storage/emulated/0/Pictures/Picsart/Picsart_26-05-11_10-40-48-795.jpg" class="pictures">
+                <h2>CGL</h2>
+                <p>SSC Combined Graduate Level Examination (SSC CGL) is a national-level competitive examination conducted by the Staff Selection Commission for recruitment to various Group B and Group C posts in central government ministries, departments, and organizations of India. It is one of the most popular government exams among graduates because it offers stable jobs, good salary, government allowances, promotion opportunities, and job security. Through SSC CGL, candidates can get posts such as Income Tax Inspector, CBI Sub-Inspector, Assistant Section Officer, Auditor, Accountant, Examiner, and many other administrative and investigative roles. Candidates must usually have a bachelor’s degree from a recognized university, while the age limit generally ranges from 18 to 32 years depending on the post, with relaxation for reserved categories. The examination is conducted in multiple tiers including computer-based objective tests, skill tests, and document verification. Subjects mainly include Mathematics, Reasoning, English, General Awareness, Computer Knowledge, and Statistics for certain posts. SSC CGL is known for its high competition level because lakhs of students appear every year to secure prestigious central government jobs with attractive pay levels and career growth opportunities.</p>
+                <p>At Bharat Academy Dehradun, we believe that success in SSC Combined Graduate Level Examination does not depend on expensive facilities, but on the right guidance, discipline, and dedication. Our mission is to make every student capable of cracking CGL through quality teaching, regular practice, personal mentorship, and smart preparation strategies, even with limited resources. We focus on building confidence, strong concepts, and consistency so that every aspirant can move closer to a successful government career.<p>
+          
+          
+          <button>VIEW FEE STRUCTURE</button>
+          
+            </div>
+        
+        </section>
+        
+        <section id="NDA">
+            <div class="NDA">
+                <img src="file:///storage/emulated/0/Pictures/Picsart/Picsart_26-05-11_10-15-00-980.jpg" class="pictures">
+                <h2>NDA</h2>
+                <p>The National Defence Academy (NDA) examination is a national-level defence entrance exam conducted by the Union Public Service Commission for candidates who wish to join the Indian Army, Navy, and Air Force after completing their school education. It is one of the most respected and challenging defence examinations in India, attracting lakhs of aspirants every year who dream of serving the nation as officers in the Indian Armed Forces. Through NDA, selected candidates receive military training, academic education, leadership development, and personality enhancement before becoming commissioned officers. Candidates must generally have completed or be appearing in Class 12 from a recognized board, while the age limit is usually between 16.5 and 19.5 years. The selection process includes a written examination followed by the Services Selection Board (SSB) interview, medical examination, and document verification. Subjects in the written exam mainly include Mathematics and General Ability Test (GAT), which covers English, Physics, Chemistry, General Science, History, Geography, and Current Affairs. NDA is known for its high competition level, discipline-oriented environment, and the opportunity to build an honourable career filled with pride, adventure, responsibility, and service to the nation.</p>
+                
+                <p>At Bharat Academy Dehradun, we believe that clearing the National Defence Academy Examination is not about expensive coaching facilities, but about discipline, dedication, and the right mentorship. Our mission is to prepare every NDA aspirant with strong concepts, physical confidence, personality development, and smart exam strategies through quality guidance and regular practice. We focus on building leadership qualities, consistency, and determination so that students from every background can move closer to achieving their dream of serving the nation as future officers in the Indian Armed Forces.</p>
+          <button>VIEW FEE STRUCTURE</button>
+            </div>
+            
+        </section>
+        
+        <section id="CDS">
+            <div class="CDS">
+                
+                <img src="file:///storage/emulated/0/Download/Defence-Logos-CDF_230428091550.png" class="pictures">
+                <h2>CDS</h2>
+                <p>The Combined Defence Services Examination is a prestigious national-level defence examination conducted by the Union Public Service Commission for graduates who aspire to join the Indian Army, Navy, and Air Force as commissioned officers. CDS offers candidates an opportunity to serve the nation with honour while receiving professional military training, leadership development, and a respected career in the Armed Forces. The selection process includes a written examination followed by the Services Selection Board (SSB) interview and medical examination, where candidates are tested on academic knowledge, intelligence, communication skills, personality, and leadership qualities. Subjects in the written examination mainly include English, General Knowledge, and Mathematics for certain academies. CDS is known for its discipline, competitive environment, career stability, and the pride of wearing the uniform while serving the country.</p>
+                
+                <p>At Bharat Academy Dehradun, we focus on preparing CDS aspirants through dedicated mentorship, concept-based learning, regular practice sessions, and personality development guidance. Our goal is not only to help students clear the written examination but also to build the confidence, discipline, and officer-like qualities required for the SSB interview and defence life. Through consistent support, strategic preparation, and motivational guidance, we help students move closer to achieving their dream of becoming officers in the Indian Armed Forces.</p>
+            <button>VIEW FEE STRUCTURE</button>    
+                
+                
+            </div>
+        </section>
+        
+        <section id="AFCAT">
+            <div class="AFCAT">
+                
+                <img src="file:///storage/emulated/0/Pictures/Picsart/Picsart_26-05-10_17-48-59-636.jpg" class="pictures">
+                <h2>AFCAT</h2>
+                <p>The Air Force Common Admission Test is a national-level defence examination conducted by the Indian Air Force for candidates who aspire to join the Indian Air Force as commissioned officers in Flying, Ground Duty Technical, and Ground Duty Non-Technical branches. AFCAT offers an exciting career filled with discipline, leadership, advanced technology, adventure, and the honour of serving the nation through air defence operations. The selection process includes a written examination followed by the Air Force Selection Board (AFSB) interview, medical examination, and document verification. Candidates are tested in subjects such as English, General Awareness, Numerical Ability, Reasoning, and Military Aptitude. AFCAT is highly respected among defence aspirants because it provides excellent career growth, attractive salary, professional training, and the opportunity to become a part of one of the world’s strongest air forces.</p>
+                <p>At Bharat Academy Dehradun, we aim to prepare AFCAT aspirants with the right balance of academic preparation, personality development, and confidence-building guidance. Our teaching approach focuses on concept clarity, regular mock tests, communication skills, and disciplined preparation to help students perform well in both the written examination and AFSB interview. Through dedicated mentorship and continuous motivation, we guide students toward achieving their dream of joining the Indian Air Force and serving the nation with pride and responsibility.</p>
+                <button>VIEW FEE STRUCTURE</button>
+            </div>
+        </section>
+        
+        <section id="ICG">
+            <div class="ICG">
+                
+                <img src="file:///storage/emulated/0/Pictures/Picsart/Picsart_26-05-11_10-23-50-746.jpg" class="pictures">
+                <h2>ICG</h2>
+                <p>The Indian Coast Guard offers excellent career opportunities for candidates who wish to serve the nation by protecting India’s maritime borders, coastal regions, and sea resources. The Indian Coast Guard conducts recruitment for various posts such as Navik (General Duty), Navik (Domestic Branch), Yantrik, and Assistant Commandant, attracting thousands of aspirants every year who dream of a disciplined and adventurous defence career. Candidates are selected through written examinations, physical fitness tests, medical examinations, and document verification depending on the post applied for. Subjects generally include Mathematics, Science, English, Reasoning, and General Knowledge. A career in the Indian Coast Guard provides job security, attractive salary, technical training, promotion opportunities, and the honour of serving the country while working in maritime rescue, security, and coastal protection operations.</p>
+                <p>At Bharat Academy Dehradun, we focus on preparing ICG aspirants through disciplined learning, physical guidance, regular practice sessions, and strong concept-building techniques. Our aim is to help students improve their academic performance, confidence, communication skills, and overall preparation strategy for both written examinations and physical selection stages. With dedicated mentorship and continuous motivation, we guide aspirants toward achieving their dream of joining the Indian Coast Guard and serving the nation with courage, responsibility, and pride.</p>
+     <button>VIEW FEE STRUCTURE</button>
+            </div>
+        </section>
+        
+        <section id="RMS">
+            <div class="RMS">
+                
+                <img src="file:///storage/emulated/0/Pictures/Picsart/Picsart_26-05-11_10-20-37-553.jpg" class="pictures">
+                <h2>RMS</h2>
+                <p>The Rashtriya Military Schools are prestigious residential public schools under the Ministry of Defence that prepare students academically, physically, and mentally for a disciplined future and leadership-oriented life. Admission to RMS is conducted through the Common Entrance Test (CET), where students compete for limited seats in Classes 6 and 9. These schools are highly respected for providing quality education, military-style discipline, personality development, sports training, and strong preparation for future defence opportunities such as NDA and other armed forces careers. Subjects in the entrance examination generally include Mathematics, English, Intelligence, General Knowledge, and Science depending on the class level. Rashtriya Military Schools are known for their disciplined environment, excellent education standards, and focus on building confidence, leadership qualities, and patriotism among students.</p>
+                <p>At Bharat Academy Dehradun, we guide RMS aspirants through strong academic preparation, regular practice tests, disciplined study methods, and personal mentorship. Our focus is on helping students build confidence, improve problem-solving skills, and develop the discipline required to succeed in competitive military school entrance examinations. Through dedicated guidance and consistent preparation, we help young aspirants move closer to achieving their dream of studying in prestigious Rashtriya Military Schools and building a bright future ahead.</p>
+                <button>VIEW FEE STRUCTURE</button>
+            </div>
+        </section>
+        
+        <section id="RIMC">
+            <div class="RIMC">
+                
+                <img src="file:///storage/emulated/0/Pictures/Picsart/Picsart_26-05-11_10-27-58-213.jpg" class="pictures">
+                <h2>RIMC</h2>
+                <p>The Rashtriya Indian Military College is one of India’s most prestigious military institutions that prepares young students for a future career in the Indian Armed Forces. Admission to RIMC is conducted through a highly competitive entrance examination followed by an interview and medical examination. Students from across the country compete for limited seats to receive quality academic education along with military training, discipline, leadership development, sports activities, and personality enhancement. The entrance examination generally includes subjects such as English, Mathematics, and General Knowledge. RIMC is widely respected for shaping confident, disciplined, and capable future officers who later move toward prestigious defence careers including the National Defence Academy and other military institutions.</p>
+                <p>At Bharat Academy Dehradun, we focus on building a strong foundation for RIMC aspirants through disciplined learning, concept clarity, regular practice sessions, and confidence-building guidance. Our preparation approach helps students improve their academic performance, communication skills, reasoning ability, and overall personality required for the entrance examination and interview process. Through dedicated mentorship and consistent support, we guide young aspirants toward achieving their dream of studying at RIMC and beginning their journey toward a proud defence career.</p>
+                <button>VIEW FEE STRUCTURE</button>
+                
+            </div>
+        </section>
+        
+        <section id="AISSEE">
+            <div class="Same">
+                <img src="file:///storage/emulated/0/Pictures/Picsart/Picsart_26-05-11_10-33-23-499.jpg" class="pictures">
+                <h2>AISSEE</h2>
+                <p>The All India Sainik Schools Entrance Examination is a national-level entrance examination conducted for admission into Sainik Schools Society schools across the country. AISSEE provides students with an opportunity to study in a disciplined and academically strong environment that focuses on leadership, personality development, physical fitness, and preparation for future defence careers such as NDA and other armed forces opportunities. Admission is generally offered for Classes 6 and 9 through a competitive examination that includes subjects like Mathematics, English, Intelligence, General Knowledge, and Science depending on the class level. Sainik Schools are highly respected for their disciplined atmosphere, quality education, sports activities, and focus on developing confident and responsible future leaders.</p>
+                <p>At Bharat Academy Dehradun, we prepare AISSEE aspirants through concept-based teaching, regular practice tests, disciplined study routines, and personal mentorship. Our aim is to help students improve their academic skills, confidence, reasoning ability, and overall personality required for competitive school entrance examinations. With dedicated guidance and continuous motivation, we support young aspirants in taking their first step toward a disciplined educational journey and a bright future ahead.</p>
+         <button>VIEW FEE STRUCTURE</button>
+                
+            </div>
+            
+        </section>
+        <section id="ACC">
+            <div class="Same">
+                <img src="file:///storage/emulated/0/Pictures/Picsart/Picsart_26-05-11_10-43-46-806.jpg" class="pictures">
+                <h2>AISSEE</h2>
+                <p>The Army Cadet College Entrance Examination is a prestigious examination conducted for serving soldiers of the Indian Armed Forces who aspire to become commissioned officers in the Indian Army. The Army Cadet College (ACC) provides selected candidates with academic education, military training, leadership development, and officer-level preparation before they move toward permanent commission as officers. The selection process generally includes a written examination, SSB interview, and medical examination, where candidates are tested in subjects such as Mathematics, General Mental Ability, Current Affairs, Reasoning, and Communication Skills. ACC is highly respected because it offers dedicated soldiers an opportunity to rise through the ranks and serve the nation in leadership positions with honour, discipline, and responsibility.</p>
+                <p>At Bharat Academy Dehradun, we focus on preparing ACC aspirants through disciplined study methods, concept clarity, regular practice sessions, and personality development guidance. Our aim is to help candidates strengthen their academic knowledge, confidence, communication skills, and leadership qualities required for both the written examination and SSB interview process. Through dedicated mentorship and strategic preparation, we guide aspirants toward achieving their dream of becoming commissioned officers in the Indian Armed Forces.</p>
+         <button>VIEW FEE STRUCTURE</button>
+                
+            </div>
+            
+        </section>
+    </body>
+</html>
