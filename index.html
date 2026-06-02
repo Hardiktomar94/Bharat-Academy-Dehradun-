@@ -1,0 +1,892 @@
+<html>
+<head> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0"></head>
+<body>
+<style>
+   body{
+        
+    }
+.header{
+border:1px solid;
+padding:5px;
+font-size:20px;
+font-family: Oswald;
+display:flex;
+flex-direction:row;
+align-items: center;
+background: #c8cacf;
+background: linear-gradient(69deg, rgba(200, 202, 207, 1) 13%, rgba(200, 202, 207, 1) 21%, rgba(200, 202, 207, 1) 27%, rgba(148, 150, 156, 1) 57%, rgba(135, 137, 143, 1) 87%, rgba(120, 122, 128, 1) 99%, rgba(132, 134, 140, 1) 100%, rgba(148, 150, 156, 1) 100%);
+
+}
+.header p{position: absolute;
+    font-size:15px;
+    font-family: Oswald;
+    right:45px;
+}
+.header img{position: absolute;
+width:20px;
+height:20px;
+right:20px;
+    
+}
+.hero{
+margin-top:5px;
+ 
+font-family:Oswald;
+width: 100%;
+max-width: 1440px;
+height: clamp(200px, 25vh, 400px);
+justify-content:center;
+text-align:center;
+align-items:center;
+background-size:cover;
+background-position:center;
+
+animation: slider 10s linear infinite;}
+
+@keyframes slider{
+    0%{background-image:url("hero(img1).jpg");}      
+    35%{background-image:url("hero(img2).jpg");}
+    70%{background-image:url("hero(img3).jpg");}
+    100%{background-image:url("hero(img4).jpg");}
+}
+
+.headline1{
+border:1px solid black;
+text-align:center;
+justify-content:center;
+font-family:Oswald;
+margin-top:5px;
+color:white;
+background: #C59B09;
+background: linear-gradient(315deg, #C59B09, #F98349);    
+
+}
+.details1{
+
+margin-top:5px;
+
+text-align:center;
+justify-content:center;
+align-items:center;
+width:auto;
+height:auto;
+font-family:'smooch Sans'
+}
+.headline2{
+border:1px solid black;
+text-align:center;
+justify-content:center;
+font-family:Oswald;
+margin-top:5px;
+background: #C59B09;
+background: linear-gradient(315deg, #C59B09, #F98349);   
+color: white;
+}
+.container{
+display:flex;
+}
+
+.pictures{
+    width:150px;
+    height:auto;
+    float:right;
+    border-radius:10px;
+}
+.container2{
+    display:flex;
+    margin-top:15px;
+}
+.details2{
+margin-left:5px;
+width:100vw;
+font-family:'smooch Sans';
+justify-content:center;
+text-align:center;
+align-items:center;
+margin-top:5px;
+}
+.headline3{
+border:1px solid black;
+margin-top:5px;
+font-family:Oswald;
+text-align:center;
+align-items:center;
+background: #C59B09;
+background: linear-gradient(315deg, #C59B09, #F98349);   
+color: white;
+}
+.pointtable{
+justify-content:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+
+
+}
+.points{
+border:1px solid black;
+
+margin-top:10px;
+font-family:'Smooch Sans';
+text-align:center;
+align-items:center;
+width:50%;
+background: #C59B09;
+background: linear-gradient(315deg, #C59B09, #F98349);   
+color: white;
+}
+.detial2 img{
+float:right;
+width:auto;
+height:auto;
+
+
+}
+
+.picture{
+    width:150px;
+    height:auto;
+    float:left;
+    
+}
+.detail2 {
+width: auto;
+font-family:'Smooch Sans';
+
+align-items: top;
+text-align: center;
+justify-content: space between;
+}
+
+
+ .menu{display:flex;
+ flex-direction:column;
+       position: fixed;
+           border:1px solid;
+           width: 135px;
+           height:clamp(250px,70vh,450px );
+           font-family: Oswald;
+           scrolling:smooth;
+           color:white;
+           left:-180px;
+           transition:0.45321s;
+           background: #168bb5;
+background: linear-gradient(336deg, rgba(22, 139, 181, 1) 0%, rgba(1, 197, 245, 1) 0%, rgba(9, 159, 203, 1) 0%, rgba(19, 105, 144, 1) 0%, rgba(22, 90, 127, 1) 0%, rgba(27, 64, 99, 1) 0%, rgba(27, 64, 99, 1) 4%, rgba(27, 64, 99, 1) 61%, rgba(27, 64, 99, 1) 42%, rgba(27, 64, 99, 1) 51%);
+           
+       }
+       .menu{
+           overflow-y: auto;
+           height:70vh;
+       }
+       .menu a:first-child{
+           margin-top:30px;
+       }
+       .menu a {
+           cursor:pointer;
+           display:block;
+           padding:10px;
+           font-size:15px;
+           color:white;
+       }
+       
+       .menu a:hover{
+           background:#3333;
+       }
+       
+       .menu a:visited{
+           text-decoration:none;
+           color:white;
+       }
+       
+       .menu a:hover{
+           text-decoration:none;
+           color:white;
+       }
+       .menu a {
+           text-decoration:none;
+           color:white;
+       }
+       
+       #menu-toggle{
+           display:none;
+       }
+       #menu-toggle:checked ~.menu{
+           left:0%;
+       }
+       .menu a:last-of-type{
+           margin-top:auto;
+       }
+       
+.menu-icon {
+    left:-20px;
+    padding:5px;
+    cursor:pointer;
+    
+}
+
+.close-btn{
+    
+    cursor:pointer;
+    font-size:30px; 
+    padding:20px;
+    margin-left:5px;
+    position:absolute;
+    right:-15px;
+    top:-30px;
+}
+
+
+.track{
+overflow:hidden;
+width:100%;
+margin-top:10px;
+}
+
+.trackbelt{
+display:flex;
+width:max-content;
+transition:0.2s ease;
+}
+
+.cards{
+border:1px solid black;
+display:flex;
+flex-direction:column;
+background:#4444;
+margin-left:10px;
+margin-right:10px;
+width:120px;
+flex-shrink:0;
+border-radius:5px;
+align-items:center;
+padding-bottom:10px;
+}
+.cards:hover{
+    transform:scale(1.08);
+    transition:0.3s; 
+}
+
+.cards img{
+width:100px;
+margin-top:15px;
+border-radius:5%;
+border:1px solid black;
+}
+
+.cards h2{
+font-size:20px;
+margin-top:5px;
+font-family:Oswald;
+color:white;
+}
+
+.cards p{
+font-size:10px;
+margin-left:5px;
+margin-right:5px;
+font-family:Smooch Sans;
+color:black;
+}
+
+.cards button{
+
+border-radius:999px;
+margin-top:10px;
+background:#18204d;
+background:linear-gradient(
+90deg,
+rgba(24,32,77,1) 0%,
+rgba(33,71,113,1) 49%,
+rgba(37,88,129,1) 74%,
+rgba(38,91,132,1) 100%
+);
+
+color:white;
+width:90px;
+font-family:Oswald;
+border:none;
+padding:5px;
+}
+
+.courses{
+border:1px solid black;
+margin-top:10px;
+    background: #C59B09;
+background: linear-gradient(315deg, #C59B09, #F98349);   
+color:white;
+text-align:center;
+font-family:Oswald;
+}
+.faculties{
+border:1px solid black;
+    background: #C59B09;
+background: linear-gradient(315deg, #C59B09, #F98349);   
+text-align:center;
+color:white;
+font-family:Oswald;
+margin-top:10px;
+}
+
+.details3 p{
+font-family:smooch Sans;
+text-align:center;
+}
+.facpics img{float:center;
+width:80px;
+    
+}
+.facpics{
+    display:flex;
+    flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+.facpics p{
+    font-family:smooch Sans;
+    text-align:center;
+    
+}
+.headlinet{border:1px solid black;
+    background: #C59B09;
+background: linear-gradient(315deg, #C59B09, #F98349);   
+text-align:center;
+color:white;
+font-family:Oswald;
+margin-top:10px;
+
+}
+.details4 p{
+    font-family:smooch Sans;
+    text-align: center;
+}
+
+.registration img{
+    width:clamp(120px, 25vw , 300px);   
+    
+    
+    
+}
+.registration{background:#4444;
+    border:2px solid black;
+    display:flex;
+    gap:clamp(20px,5vw,500px);
+   
+    padding:10px;
+}
+.form{
+align-items:center;
+   text-align: center;
+   margin-top:10px;
+   
+   margin-left: ;
+   font-family: Oswald;
+   
+  
+}
+.form p{
+    margin-top:0px;
+}
+.form button{
+    border-radius;5px;
+    font-family:Oswald;
+    text-decoration:none;
+    
+}
+.form button:visited{
+    text-decoration:none;
+    color:black;
+}
+.form button:hover{
+    text-decoration:none;
+    color:black;
+}
+
+.footer{
+    width:100%; 
+    border:2px solid black;
+    font-family:Oswald;
+    margin-top:
+    background: #168bb5;
+background: linear-gradient(336deg, rgba(22, 139, 181, 1) 0%, rgba(1, 197, 245, 1) 0%, rgba(9, 159, 203, 1) 0%, rgba(19, 105, 144, 1) 0%, rgba(22, 90, 127, 1) 0%, rgba(27, 64, 99, 1) 0%, rgba(27, 64, 99, 1) 4%, rgba(27, 64, 99, 1) 61%, rgba(27, 64, 99, 1) 42%, rgba(27, 64, 99, 1) 51%);
+color:white;
+      
+}
+.footer p{ 
+   
+    margin-top:-10px;
+    
+}
+
+.Address{
+    color: Orange;
+   margin-top:10px;
+    margin-bottom:10px;
+}
+.Address::after{
+    content:"";
+    display:block;
+    width:100%;
+    height:3px;
+    background:Orange;
+}
+
+
+}
+
+}
+.youtubevideo{
+    width:clamp(100%,90vw,100%);
+   margin-top:10px;
+  gap:10px;
+    
+    
+}
+.youtubevideo iframe{
+    width:100%;
+    margin-top:10px;
+    align-items:center;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	height:clamp(150px,35vh,200px);
+}
+.headline5{
+    border:1px solid black;
+    background: #C59B09;
+background: linear-gradient(315deg, #C59B09, #F98349);   
+text-align:center;
+color:white;
+font-family:Oswald;
+top:50px;
+}
+.footer a {
+display:flex;
+    text-align:center;
+    justify-content:center;
+    color:white;
+    margin-top:5px;
+}
+
+.container3{
+
+display:flex;
+margin-top:10px;
+
+}
+.details3{
+width: auto;
+font-family:'Smooch Sans';
+align-items: top;
+text-align: center;
+justify-content: space between;
+}
+
+.detailed4{
+idth: auto;
+font-family:'Smooch Sans';
+
+align-items: top;
+text-align: center;
+justify-content: space between;
+}
+
+.container4{
+    display:flex;
+    margin-top:15px;}
+	
+	.detialed4 img{
+float:right;
+width:150px;
+height:auto;}
+
+.faculties{
+display:flex;
+flex-direction:column;
+}
+	.faculties img{
+	align-items:center;
+	justify-content:center;
+	}
+</style>
+
+
+    
+    <div class="header">
+           <label for="menu-toggle" class="menu-icon">☰</label>
+           <p>BHARAT ACADEMY DEHRADUN </p>
+           <img src="logo.png">
+           
+           </div>
+           <input type="checkbox" id="menu-toggle">
+           
+              
+           <div class="menu">
+               <label for="menu-toggle" class="close-btn">
+                  ← 
+               </label>
+               <a href="index.html">HOME</a>
+               <a href="Registration.html">REGISTERATION</a>
+               <a href="Courses.html">COURSES</a>
+               <a href="feestructure.html">FEE STRUCTURE</a>
+               <a href="https://wa.me/917078368368?text=Hey%20I%20am%20here%20for%20enquiry">ENQUIRY</a>
+               <a href="tel:+917078368368">CONTACT US</a>
+               <a href="">ABOUT US</a>
+               
+           </div>
+</div>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+<div class="hero">
+</div>
+
+<div class="headline1">
+What Makes Us Different</div>
+<div class="details1">
+<h2>Building Minds, Shaping Bharat</h2>
+At Bharat Academy Dehradun, we believe education is not just about studying, but about creating strong, confident individuals ready to contribute to the nation. With modern smart board classrooms, experienced teachers, and concept-focused learning, we ensure every student builds a solid academic foundation. Our teaching goes beyond books, helping students truly understand and apply what they learn.
+
+<h2>Guiding Effort, Delivering Results</h2>
+Through analysis-based teaching, regular tests, and personalized attention, we carefully track each student’s progress and guide them toward continuous improvement. A disciplined environment, strong mentorship, and a result-oriented approach keep students focused and motivated. Here, we don’t just prepare students for exams — we prepare them for real success in life.
+</div>
+<div class="headline2">
+MASTER EDUCATORS
+</div>
+<div class="container">
+<div class="details2"> 
+<img src="educator (img1).jpg " class="pictures">
+Our Institute Director is a highly experienced and dedicated mentor with over 10 years of teaching excellence. He has successfully cleared the CDS written examination twice, showcasing his strong command over defence-level academics. Having mastered English, he ensures students develop clear communication and conceptual strength. Under his guidance, numerous students have successfully cleared competitive exams like NDA, CDS, and AFCAT. Being an alumnus of Navodaya Vidyalaya, he brings discipline, consistency, and a strong academic foundation into his teaching. His methodology focuses on clarity, regular practice, and smart strategies, all delivered with a calm and composed mindset that helps students learn effectively without pressure.</div>
+
+
+</div>
+<div class="container2">
+<div class="detail2">
+<img src="educator(img2).jpeg " class="picture">
+Amit Kumar is a highly qualified Mathematics teacher with B.Sc., M.Sc., and B.Ed. degrees, and has successfully cleared competitive exams like TAT and GATE, showcasing his strong academic foundation. He has also taught students preparing for the Merchant Navy, bringing practical experience and discipline into his teaching. Known for his calm nature and light teaching style, he explains complex concepts in a simple and clear manner. His positive influence, focus on basics, and regular practice approach help students gain confidence and develop a strong understanding of Mathematics.
+</div>
+</div>
+
+<div class="container3">
+<div class="details3">Anjali Sharma is a highly educated biology teacher with a strong medical background. She is known for her friendly behavior, excellent teaching skills, and deep knowledge of the subject. She explains complex biological concepts in a simple and easy-to-understand manner, making learning enjoyable for students. Her dedication to education, supportive nature, and effective teaching methods make her a respected and admired teacher.</div>
+<img src="educator (img1).jpg " class="pictures">
+
+
+</div>
+
+</div>
+<div class="container4">
+<img src="educator(img2).jpeg " class="picture">
+<div class="detailed4">
+Ankur Yadav Sir is an IITian and an exceptional physics teacher known for his deep knowledge of the subject and excellent teaching abilities. He has a unique way of explaining complex physics concepts in a simple and understandable manner, which helps students develop a strong foundation in the subject. His classes are interactive, engaging, and focused on clearing every student's doubts. Ankur Sir is very supportive, approachable, and understanding, always encouraging students to ask questions and learn without hesitation. He motivates students to think logically and apply concepts to real-life situations. His dedication, patience, and student-friendly nature make him a highly respected teacher and an inspiration to many learners.
+
+</div>
+
+</div>
+
+<div class="headline3">
+OUR STRATEGIC GOALS
+</div>
+<div class="pointtable">
+<div class="points">
+• RESULT FOCUS
+</div>
+<div class="points">
+• REGULAR MOCK TEST
+</div><div class="points">
+• EACH INDIVIDUAL ATTENTION 
+</div><div class="points">
+• DECIPLINE BUILDING
+</div><div class="points">
+• 100% WRITTEN PREPARATION 
+</div><div class="points">
+• DOUBT SOLVING
+</div>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+           </div>
+           
+           
+           </div>
+           <div class="courses">
+               OUR COURSES
+           </div>
+           <div class="track">
+
+<div class="trackbelt">
+
+
+
+
+
+
+
+<div class="cards">
+
+<img src="cds.png">
+
+<h2>CDS</h2>
+
+<p>
+The Combined Defence Services examination selects courageous candidates for leadership, discipline, and dedicated service in protecting and serving the nation.
+</p>
+
+<a href="Courses.html#CDS"><button>View More</button></a>
+
+</div>
+
+<div class="cards">
+
+<img src="nda.jpg">
+
+<h2>NDA</h2>
+
+<p>
+The National Defence Academy builds discipline, courage, and leadership in young cadets, preparing them to serve the nation with honor and pride.
+</p>
+
+<a href="Courses.html#NDA"><button>View More</button></a>
+
+</div>
+
+<div class="cards">
+
+<img src="afcat.jpg">
+
+<h2>AFCAT</h2>
+
+<p>
+The Air Force Common Admission Test offers aspirants a chance to join the Indian Air Force and build a career with discipline and service to the nation.
+</p>
+
+<a href="Courses.html#AFCAT"><button>View More</button></a>
+
+</div>
+
+<div class="cards">
+
+<img src="rms.jpg">
+
+<h2>RMS</h2>
+
+<p>
+Rashtriya Military Schools provide quality education and military values, helping students grow into confident and responsible leaders of the nation.
+</p>
+
+<a href="Courses.html#RMS"><button>View More</button></a>
+
+</div>
+
+<div class="cards">
+
+<img src="icg.jpg">
+
+<h2>ICG</h2>
+
+<p>
+The Indian Coast Guard protects the nation’s maritime borders and ensures safety at sea with courage, discipline, and dedication to serving the country.
+</p>
+
+<a href="Courses.html#ICG"><button>View More</button></a>
+
+</div>
+
+<div class="cards">
+
+<img src="rimc.jpg">
+
+<h2>RIMC</h2>
+
+<p>
+The Rashtriya Indian Military College prepares young cadets for leadership, discipline, and excellence in serving the nation with honor and dedication.
+</p>
+
+<a href="Courses.html#RIMC"><button>View More</button></a>
+
+</div>
+
+
+<div class="cards">
+
+<img src="aissee.jpg">
+
+<h2>AISSEE</h2>
+
+<p>
+All India Sainik Schools Entrance Examination selects students for military education, discipline and leadership to serve the nation proudly.
+</p>
+
+<a href="Courses.html#AISSEE"><button>View More</button></a>
+
+</div>
+
+
+
+<div class="cards">
+
+<img src="acc.jpg">
+
+<h2>ACC</h2>
+
+<p>
+The Army Cadet College prepares dedicated soldiers for leadership, discipline, and honorable service in protecting and serving the nation proudly.
+</p>
+
+<a href="Courses.html#ACC"><button>View More</button></a>
+
+</div>
+
+
+</div>
+
+</div>
+
+<div class="faculties">
+    FACULTIES </div>
+   <div class="details3"> <p>At Bharat Academy Dehradun, we provide a comfortable and student-friendly learning environment designed to help every student stay focused and motivated. Our institute features spacious classrooms with proper seating arrangements and excellent spacing, ensuring students can learn without disturbance or congestion. Fully air-conditioned rooms create a pleasant atmosphere for studying throughout the year. We maintain clean and hygienic classrooms along with a disciplined and positive environment that supports serious preparation. Our teachers are highly responsive, approachable, and always ready to solve doubts and guide students personally. With smart learning methods, regular interaction, and quality facilities, we ensure students receive the best possible academic experience.</p>
+</div>
+
+<div class="facpics">
+   <img src="addphoto(img).jpg">
+    <p>Our institute provides spacious and well-organized classrooms designed for comfortable and distraction-free learning. With proper seating arrangements, excellent ventilation, and a clean environment, students can stay focused and learn effectively throughout their classes.</p>
+    <img src="addphoto(img).jpg">
+    <p>Our teachers are highly responsive, supportive, and always ready to guide students whenever needed. From doubt solving to personal mentorship, they ensure every student receives proper attention and clear understanding of concepts.</p>
+   <img src="addphoto(img).jpg">
+    <p>We maintain a welcoming and student-friendly atmosphere with a cooperative reception staff that helps students and parents with guidance, information, and support in a polite and professional manner.</p>
+    <img src="addphoto(img).jpg">
+    <p>Our institute provides fully air-conditioned classrooms to create a comfortable and focused learning environment. The pleasant atmosphere helps students concentrate better and study efficiently throughout the year.</p>
+    
+</div>
+
+<div class="headlinet">START YOUR JOURNEY WITH US</div>
+<div class=" details4"><p>Start your defence preparation journey with Bharat Academy Dehradun and move one step closer to your dream career. With experienced mentors, quality teaching, disciplined guidance, and a motivating environment, we help students build confidence, knowledge, and the mindset needed for success. Your journey towards NDA, CDS, AFCAT, and other competitive exams begins here.</p>
+</div>
+
+<div class="registration">
+    <img src="logo.png">
+    <div class="form">REGISTER NOW
+    <p>SECURE YOUR FUTURE WITH OUR EXPERTISE </p>
+  <a href="Registration.html">  <button>JOIN NOW</button></a>
+    </div>
+</div>
+
+
+
+<div class="headline5">OUR YOUTUBE</div>
+<div class="youtubevideo">
+    
+    <iframe src="https://www.youtube.com/embed/RIrOr_ejP4g"
+    title="youtube video player"
+    frameborder="0"
+    allowfullscreen 
+    ></iframe>
+    
+    <iframe src="https://www.youtube.com/embed/QeMolcVItZw"
+    title="youtube video player"
+    frameborder="0"
+    allowfullscreen 
+    ></iframe>
+    
+    <iframe src="https://www.youtube.com/embed/Mwa_5boKjhQ"
+    title="youtube video player"
+    frameborder="0"
+    allowfullscreen 
+    ></iframe>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+    <div class="Address">ADDRESS </div>
+    <p>BHARAT ACADEMY DEHRADUN</p>
+<p>TAPKESHWAR ROAD,GARHI CANTT</p>
+<p>DEHRADUN-248003 (UTTRAKHAND)</p>
+<p>DIRECTOR-ALAM YILDRIM</p>
+<p>CONTACT-+917078368368,+918909238238</p>
+<p>E-mail= Bharatacademydehradun@gmail.com</p>
+
+<a href="policy.html">Policy<a>
+    <a href="">Term&Conditions</a>
+</div>
+<script>
+
+const trackbelt = document.querySelector('.trackbelt');
+
+const cards = document.querySelectorAll('.cards');
+
+let index = 0;
+
+let startX = 0;
+
+let endX = 0;
+
+function slideCards(){
+
+trackbelt.style.transform =
+`translateX(-${index * 140}px)`;
+
+}
+
+trackbelt.addEventListener('touchstart',(e)=>{
+
+startX = e.touches[0].clientX;
+
+});
+
+trackbelt.addEventListener('touchend',(e)=>{
+
+endX = e.changedTouches[0].clientX;
+
+if(startX - endX > 50){
+
+index++;
+
+if(index > cards.length - 1){
+
+index = cards.length - 1;
+
+}
+
+slideCards();
+
+}
+
+if(endX - startX > 50){
+
+index--;
+
+if(index < 0){
+
+index = 0;
+
+}
+
+slideCards();
+
+}
+
+});
+
+</script>
+
+
+
+</body>
+
+</html>
